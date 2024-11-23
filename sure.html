@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأكيد مشروع التخرج</title>
+
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+   <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" /> 
+   
+
+ 
+  <!-- fonts style -->
+ 
+  <!--owl slider stylesheet -->
+ 
+  <!-- font awesome style -->
+ 
+  <!-- Custom styles for this template -->
+ 
+  <!-- responsive style -->
+ 
+    <script src="js/script.js"></script>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+         }
+        h1 {
+            color: #007BFF;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .con{
+
+
+          min-height: 73vh;
+          
+        }
+    </style>
+</head>
+<body>
+
+ 
+     
+      <!-- bootstrap core css -->
+      
+      
+      <!-- fonts style -->
+     
+      <!--owl slider stylesheet -->
+     
+      <!-- font awesome style -->
+     
+      <!-- Custom styles for this template -->
+     
+      <!-- responsive style -->
+  
+ 
+    
+    
+        <div class="hero_bg_box">
+          <div class="bg_img_box">
+            <img src="" alt="">
+          </div>
+        </div>
+        
+        <div class="con">
+
+        <!-- header section strats -->
+        <header class="header "  >
+          <nav class="main_nav">
+              <div class="containers" >
+                <div class="row">
+                  <div class="col main_nav_col  flex-row align-items-center justify-content-start" >
+    
+    
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
+                </button>               -->
+                  <div class="logo_container">
+    
+                <div class="logo"><a href="#"><img src="images/logo.png" alt=""> بوابة مشاريع التخرج </a></div>
+     
+                    </div>
+    
+                      <div class="main_nav_container ml-auto" id="navbarSupportedContent">
+                          <ul class="main_nav_list" >
+                            <li class="main_nav_item" id="main"><a class="nav-link  "  href="home.html">الرئيسية <span class="sr-only">(current)</span></a></li>
+                            <li class="main_nav_item" id="selected"><a class="nav-link" onclick="handleLogin('student', event)" >اضافة مشروع جديد </a></li>
+                            <li class="main_nav_item" ><a class="nav-link" href="complet.html">اكمال المشروع</a></li>
+                            <li class="main_nav_item"><a class="nav-link" href="sure.html">الاستعلام عن المشروع</a></li>
+                            <li class="main_nav_item"><a class="nav-link" href="index.html"> تسجيل الخروج</a></li>
+                            <!-- <li class="main_nav_item"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 268l144 144 144-144M256 392V100"/></svg></li> -->
+    
+                            <li class="main_nav_item"> <a onclick="showLoginForm('admin')"class="nav-link" >دخول المشرف </a></li>
+      
+                      </ul>
+                    </div>
+                    <div class="hamburger">
+                      <i class="fa fa-bars trans_200"></i>
+                    </div>
+               </div>
+              </div></div>
+              </nav>
+      </header>
+      <div class="menu trans_500">
+        <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="menu_close_container"><div class="menu_close"></div></div>
+          <div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+          <ul>
+            <li class="menu_item" id="main"><a class="nav-link  "  href="home.html">الرئيسية <span class="sr-only">(current)</span></a></li>
+            <li class="menu_item" id="selected"><a class="nav-link" onclick="handleLogin('student', event)" >اضافة مشروع جديد </a></li>
+            <li class="menu_item"><a class="nav-link" href="complet.html">اكمال المشروع</a></li>
+            <li class="menu_item"><a class="nav-link" href="sure.html">الاستعلام عن المشروع</a></li>
+            <li class="menu_item"><a class="nav-link" href="index.html"> تسجيل الخروج</a></li>
+            <li class="menu_item"><a onclick="showLoginForm('admin')" class="nav-link"  >دخول المشرف </a></li>
+    
+          </ul>
+        </div>
+      </div>
+        <!-- end header section -->
+        <!-- slider section -->
+        <div class="mi">
+          <section class="hero-area2" id="home">
+             
+            <div class="container">
+                <h1>تأكيد مشروع التخرج</h1>
+                <form id="projectForm">
+                    <label for="projectNumber">رقم المشروع:</label>
+                    <input type="text" id="id_projects" name="id_projects" required>
+                          <button type="button" onclick="checkProject()">تحقق</button>
+          </form>  
+                <div id="s" style="display: none;">
+                    <h2 id="projectName">....</h2>
+                    <button onclick="confirmProject()">تأكيد المشاركة</button>
+                </div>
+            </div>
+         </div>
+          </section>
+        </div>
+      <!-- footer section -->
+      <section class="footer_section">
+        <div class="">
+          <p>
+             جميع الحقوق محفوظة لمركز تقنية المعلومات في التعليم العالي &copy; <span id="displayYear"></span> 
+            
+          </p>
+        </div>
+      </section>
+        </div>
+    
+    
+
+
+    
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/main.js"></script>
+      <!-- popper js -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+      <!-- bootstrap js -->
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <!-- owl slider -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+      </script>
+      <!-- custom js -->
+      <script type="text/javascript" src="js/custom.js"></script>
+      <!-- Google Map -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+      </script>
+        <script  type="module" src="js/fontawesome_all.min.js"></script> 
+</body>
+</html>

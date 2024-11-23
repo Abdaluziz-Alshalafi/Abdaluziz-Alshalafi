@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Input Container</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+   <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" /> 
+   
+
+ 
+  <!-- fonts style -->
+ 
+  <!--owl slider stylesheet -->
+ 
+  <!-- font awesome style -->
+ 
+  <!-- Custom styles for this template -->
+ 
+  <!-- responsive style -->
+ 
+    <script src="js/script.js"></script>
+
+
+    <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    direction: rtl;
+}
+ 
+
+
+@media(min-width: 400px){
+
+.container {
+
+
+  max-width: 400px;
+}
+
+.grid{
+
+
+margin: 0px;
+
+}
+
+
+}
+@media(min-width: 500px){
+.container {
+  max-width: 410px;
+}
+
+
+.grid{
+
+
+margin: 0;
+
+}
+
+}
+@media (min-width: 640px) {
+.container {
+    max-width:430px
+}
+.grid{
+
+
+margin: 0px;
+
+}
+}
+@media (min-width: 768px) {
+.container {
+    max-width:768px
+}
+.grid{
+
+
+margin: 20px;
+
+}
+}
+@media (min-width: 868px) {
+.container {
+    max-width:768px
+}
+}
+@media (min-width: 1024px) {
+.container {
+    max-width:800px;
+ }
+}
+@media (min-width: 1280px) {
+.container {
+    max-width:850px
+}
+}
+@media (min-width: 1536px) {
+.container {
+    max-width:900px;
+ }
+}
+ </style>
+</head>
+<body>
+ <div class="con" >
+    <header class="header "  >
+      <nav class="main_nav">
+          <div class="containers" style="background: none; width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          direction: rtl;
+      ">
+            <div class="row">
+              <div class="col main_nav_col  flex-row align-items-center justify-content-start" style="display: flex;">
+
+
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>               -->
+              <div class="logo_container">
+
+            <div class="logo"><a href="#"><img src="images/logo.png" alt=""> بوابة مشاريع التخرج </a></div>
+ 
+                </div>
+
+                  <div class="main_nav_container ml-auto" id="navbarSupportedContent">
+                      <ul class="main_nav_list" >
+                        <li class="main_nav_item" id="main"><a class="nav-link  "  href="home.html">الرئيسية <span class="sr-only">(current)</span></a></li>
+                        <li class="main_nav_item" id="selected"><a class="nav-link" onclick="handleLogin('student', event)" >اضافة مشروع جديد </a></li>
+                        <li class="main_nav_item" ><a class="nav-link" href="complet.html">اكمال المشروع</a></li>
+                        <li class="main_nav_item"><a class="nav-link" href="sure.html">الاستعلام عن المشروع</a></li>
+                        <li class="main_nav_item"><a class="nav-link" href="index.html"> تسجيل الخروج</a></li>
+                        <li class="main_nav_item"> <a onclick="showLoginForm('admin')"class="nav-link" >دخول المشرف </a></li>
+  
+                  </ul>
+                </div>
+                <div class="hamburger">
+                  <i class="fa fa-bars trans_200"></i>
+                </div>
+           </div>
+          </div></div>
+          </nav>
+  </header>
+
+  <div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+			<div class="menu_close_container"><div class="menu_close"></div></div>
+			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<ul>
+				<li class="menu_item" id="main"><a class="nav-link  "  href="home.html">الرئيسية <span class="sr-only">(current)</span></a></li>
+				<li class="menu_item" id="selected"><a class="nav-link" onclick="handleLogin('student', event)" >اضافة مشروع جديد </a></li>
+				<li class="menu_item"><a class="nav-link" href="complet.html">اكمال المشروع</a></li>
+				<li class="menu_item"><a class="nav-link" href="sure.html">الاستعلام عن المشروع</a></li>
+				<li class="menu_item"><a class="nav-link" href="index.html"> تسجيل الخروج</a></li>
+        <li class="menu_item"><a onclick="showLoginForm('admin')" class="nav-link"  >دخول المشرف </a></li>
+
+			</ul>
+		</div>
+	</div>
+    <!-- end header section -->
+    <!-- slider section -->
+     <section class="hero-area2" id="">
+   
+                      <div class=" container   text-center ">
+                            <div class="rows student-container">
+                          
+                                <div class="row">
+
+                                      <div class="col col-lg-3 grid flex-auto">
+                                          <label for="projectNumber" class="mt-2 text-right text-slate-600 h-4 text-sm">رقم المشروع   
+                                              <span class="text-xs text-red-600 align-top">*</span>
+                                        
+                                            </label>
+                                            <form id="projectForm"> 
+                                          <input placeholder=" رقم المشروع" type="number" name="id_project" id="id_project" required  class="rounded-lg  appearance-none border   py-2 px-4 md:mb-0 mb-4 bg-white     ">
+                                        
+                                    
+                                          
+                                      </div>
+                                
+                                      <div class="col col-lg-5 grid flex-auto">
+                                        <label class="mt-2 text-right text-slate-600 h-4 text-sm">اسم المشروع   
+                                          <span class="text-xs text-red-600 align-top">*</span>
+                                        </label>
+                                        <label   type="number"   id="projectDetails" style="color: black;  font-size: 18px;"   class="rounded-lg  appearance-none    py-2 px-4 md:mb-0 mb-4 bg-white     "> اسم المشروع</label>
+                                      </div>
+                                </div>
+                            </div>
+                                      <h5 class="md:py-44" >Project Attachments</h5>
+                                      <div class="file-inputs">
+                                          <input type="file" id="pdf_file" accept="application/pdf">
+                                          <input type="file" id="doc_file" accept=".doc,.docx">
+                                          <input type="file" id="zip_file"  accept=".zip" style="display: none">
+                                            <label for="other_attachments">
+                                              <input type="checkbox" id="other_attachments" name="other_attachments"> Other attachments
+                                          </label>
+                                      </div> 
+
+                    
+
+                            <div class=" col col-md--1" style="margin-top: 5%; justify-items: center;">
+                              <button type="submit" onclick="checkProject()" class="appao-btn   ">
+                                  
+                                  رفع</button>
+                          </div>
+                                                                
+                        </div>
+
+
+                         
+                     
+  </section>
+  	
+</div>
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="">
+      <p>
+         جميع الحقوق محفوظة لمركز تقنية المعلومات في التعليم العالي &copy; <span id="displayYear"></span> 
+        
+      </p>
+    </div>
+  </section>
+
+
+
+       <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+       <!-- popper js -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+      <!-- bootstrap js -->
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <!-- owl slider -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+      </script>
+      <!-- custom js -->
+      <script type="text/javascript" src="js/custom.js"></script>
+      <!-- Google Map -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+      </script>
+        <script  type="module" src="js/fontawesome_all.min.js"></script> 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
