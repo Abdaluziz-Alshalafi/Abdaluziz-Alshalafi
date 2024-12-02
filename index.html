@@ -24,11 +24,11 @@
             </div>
         </div>
 
-    <nav class="navbar">
-        <div class="logo">بوابة مشاريع التخرج | Graduation Projects Portal</div>
+    <nav class="navbar header     navbar-expand-lg" style="display: inline-flex;" >
+        <div class="logo">بوابة مشاريع التخرج </div>
         <div class="nav-links">
-             <button onclick="showLoginForm('student')" class="nav-btn">دخول الطالب | Student Login</button>
-            <button onclick="showLoginForm('admin')" class="nav-btn">دخول المشرف | Admin Login</button>
+             <button onclick="showLoginForm('student')" class="nav-btn">دخول الطالب </button>
+            <button onclick="showLoginForm('admin')" class="nav-btn">دخول المشرف </button>
         </div>
     </nav>
 
@@ -53,11 +53,11 @@
             </datalist>
 
 
-                <input type="text" class="input" placeholder="الرقم الأكاديمي | Academic ID" required>
-                <input type="password" class="input" placeholder="كلمة المرور | Password" required>
+                <input type="text" class="input" placeholder="الرقم الأكاديمي " required>
+                <input type="password" class="input" placeholder="كلمة المرور " required>
                  
                 
-                <button type="submit"  class="login-button"  id="submitButton">دخول | Login</button>
+                <button type="submit"  class="login-button"  id="submitButton">دخول </button>
 
             </form>
             <div class="social-account-container">
@@ -87,30 +87,30 @@
         <div id="adminLogins" class="login-form hidden">
             <h2>دخول المشرف | Admin Login</h2>
             <form onsubmit="handleLogin('admins', event)">
-                <input type="text" class="input" placeholder="اسم المستخدم | Username" required>
-                <input type="password" class="input" placeholder="كلمة المرور | Password" required>
+                <input type="text" class="input" placeholder="اسم المستخدم " required>
+                <input type="password" class="input" placeholder="كلمة المرور " required>
                 <button type="submit" class="login-button" >دخول | Login</button>
             </form>
         </div>
 
         <!-- Student Dashboard -->
         <div id="studentDashboards" class="dashboard hidden">
-            <h2>لوحة تحكم الطالب | Student Dashboard</h2>
+            <h2>لوحة تحكم الطالب </h2>
             
              <div class="upload-section">
                 <h3>رفع مشروع جديد | Submit New Project</h3>
                 <form class="project-form" onsubmit="handleProjectSubmit(event)">
-                    <input type="text" placeholder="عنوان المشروع | Project Title" required>
-                    <textarea placeholder="وصف المشروع | Project Description" required rows="4"></textarea>
+                    <input type="text" placeholder="عنوان المشروع " required>
+                    <textarea placeholder="وصف المشروع " required rows="4"></textarea>
                     
                     <div id="teamMembers">
                         <h4>أعضاء الفريق | Team Members</h4>
                         <div class="team-member">
-                            <input type="text" placeholder="الرقم الأكاديمي | Academic ID" required>
-                            <input type="text" placeholder="اسم الطالب | Student Name" required>
-                            <input type="text" placeholder="الكلية| College " required>
-                            <input type="text" placeholder="رقم الهاتف | Number Phone" required>
-                            <input type="text" placeholder="رقم الهوية | ID Number" required>
+                            <input type="text" placeholder="الرقم الأكاديمي " required>
+                            <input type="text" placeholder="اسم الطالب " required>
+                            <input type="text" placeholder="الكلية" required>
+                            <input type="text" placeholder="رقم الهاتف " required>
+                            <input type="text" placeholder="رقم الهويةr" required>
 
 
                         </div>
@@ -123,30 +123,30 @@
             </div>
 
              <div class="project-status">
-                <h3>حالة المشروع | Project Status</h3>
+                <h3>حالة المشروع  </h3>
                 <div id="projectStatusContents"></div>
               </div>
         </div>
 
         <!-- Admin Dashboard -->
         <div id="adminDashboards" class="dashboard hidden">
-            <h2>لوحة تحكم المشرف | Admin Dashboard</h2>
+            <h2>لوحة تحكم المشرف  </h2>
             
             <!-- Pending Projects -->
             <div class="projects-list">
-                <h3>المشاريع قيد المراجعة | Pending Projects</h3>
+                <h3>المشاريع قيد المراجعة  </h3>
                 <div id="pendingProjectss"></div>
             </div>
 
             <!-- Approved Projects -->
             <div class="projects-list">
-                <h3>المشاريع المقبولة | Approved Projects</h3>
+                <h3>المشاريع المقبولة  </h3>
                 <div id="approvedProjects"></div>
             </div>
 
             <!-- Rejected Projects -->
             <div class="projects-list">
-                <h3>المشاريع المرفوضة | Rejected Projects</h3>
+                <h3>المشاريع المرفوضة  </h3>
                 <div id="rejectedProjectss"></div>
             </div>
         </div>
