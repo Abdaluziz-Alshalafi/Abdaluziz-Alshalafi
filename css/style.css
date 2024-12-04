@@ -2009,7 +2009,7 @@ font-weight: bold;
 	-o-transform: translateY(-3px);
 	transform: translateY(-3px);
 	cursor: pointer;
-	margin-left: 20px;
+	margin-top: 20px;
 }
 .header.scrolled .hamburger
 {
