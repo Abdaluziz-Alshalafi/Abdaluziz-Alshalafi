@@ -40,7 +40,7 @@ body
 h1, .h1{
 text-align: right;
   font-size: calc(1.375rem + 1.5vw);
-  line-height: 4.2;
+  line-height: 2.2;
   font-weight: bold;
 
 }
@@ -215,7 +215,7 @@ select:active {
     background-size: cover;
 	overflow: hidden;
   text-align: right;
-
+color: white;
   display: flex;
 }
  
@@ -1372,7 +1372,9 @@ button:hover {
 @media (max-width: 391px) {
 
 
-
+  .navbar-toggler {
+    margin-right: 0px;
+}
   h1, .h1 {
      
     line-height: 1.5;
@@ -1386,7 +1388,7 @@ button:hover {
 
   .navbar-toggler{
 
-/*     margin-right: 350px; */
+    /* margin-right: 350px; */
   }
 }
 
@@ -1421,7 +1423,7 @@ button:hover {
     padding: 20px 0px;
    }
   .dashboard {
-      margin-top: 22%;
+      /* margin-top: 22%; */
   }
   .header_section{
 
