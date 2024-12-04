@@ -136,7 +136,8 @@
 	}
 	
 	.hamburger {
-	  display: block;
+		display: flex;
+				float: inline-end;
 	}
 	
 	.menu.active .main_nav_list {
