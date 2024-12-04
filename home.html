@@ -83,7 +83,7 @@
               <a class="nav-link" href="home.html"  onclick="loadPage('submit')">الرئيسية</a>
             </li>
             <li class="nav-item main_nav_item" id="selected">
-              <a class="nav-link" harf="#"   onclick="handleLogin('student', event)">تقديم مشروع</a>
+              <a class="nav-link"   onclick="handleLogin('student', event)" data-bs-toggle="collapse" data-bs-target="#navbarNav">تقديم مشروع</a>
             </li>
             <li class="nav-item main_nav_item"  >
               <a class="nav-link"  href="#bottom" >حالة المشروع</a>
@@ -95,7 +95,7 @@
               <a class="nav-link" href="index.html"  >تسجيل الخروج</a>
             </li>
             <li class="nav-item main_nav_item">
-              <a class="nav-link"   onclick="showLoginForm('admin')">لوحة الإدارة</a>
+              <a class="nav-link"   onclick="showLoginForm('admin')" data-bs-toggle="collapse" data-bs-target="#navbarNav">لوحة الإدارة</a>
             </li>
             <!-- <button class="fancy-button liquid">Liquid Flow</button> -->
           </ul>
@@ -107,8 +107,8 @@
     <!-- end header section -->
     <!-- slider section -->
      <main  >
-
-      <section class="hero-area"  id="home" style=" color: white;">
+<section id="home">
+      <section class="hero-area"   >
          <div class="containers">
           <h1> البوابة الالكترونية لمشاريع التخرج</h1>
           <p class="lead">نظام إدارة وتقديم مشاريع التخرج للطلاب البوابة الموحدة لجميع مشاريع التخرج في الجمهورية اليمنية </p>
@@ -121,7 +121,7 @@
         </div>
  
       </section>
-
+    </section>
 
           <!-- <section class="hero-area"  id="home">
 			<div class="containers">
@@ -250,7 +250,7 @@
                     </div>
                 </div>
                   
-                                    <button type="button" style="width: 20%; align-self: center" class="add_button"  onclick="addTeamMember()">إضافة عضو  </button>
+                                    <button type="button" style="  align-self: center" class="add_button"  onclick="addTeamMember()"> +  </button>
 
                   <!-- <input type="file" accept=".pdf,.doc,.docx" required> -->
                   <button type="submit">رفع المشروع  </button>
