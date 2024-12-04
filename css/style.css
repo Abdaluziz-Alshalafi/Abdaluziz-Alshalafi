@@ -1220,6 +1220,7 @@ body {
   z-index: 12;
   background: linear-gradient(to right, #000529 1%, #262b4a 30%, #005db5 67%, #0e253a 90%); 
   background: linear-gradient(60deg, #111646 0%, #3949ab 100%);
+	background: linear-gradient(61deg, #151c65 25%, #3949ab 78%);
 }
 
 .logo {
