@@ -44,6 +44,10 @@ text-align: right;
   font-weight: bold;
 
 }
+h4,.h4{
+
+  margin: 20px auto;
+}
 .hero {
   background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
   color: white;
@@ -1300,8 +1304,8 @@ input, textarea {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   font-size: 1rem;
-  margin: 2%;
-  background: #a686a124;
+  margin: 2% 0px;
+  background: #f8f8f8f2;
 
 }
 
